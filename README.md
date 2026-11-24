@@ -1,4 +1,4 @@
-\# Industrial IT/OT Network Lab
+# Industrial IT/OT Network Lab
 
 
 
@@ -6,7 +6,7 @@ A simulated network infrastructure for a manufacturing company, designed and imp
 
 
 
-\## Project Overview
+## Project Overview
 
 
 
@@ -18,43 +18,43 @@ The main objective is to separate corporate IT and operational technology (OT) n
 
 
 
-!\[Network Topology](screenshots/topology.png)
+![Network Topology](screenshots/topology.png)
 
 
 
-\## Technologies and Concepts
+## Technologies and Concepts
 
 
 
-\- Cisco Packet Tracer
+- Cisco Packet Tracer
 
-\- Cisco IOS
+- Cisco IOS
 
-\- IPv4 addressing and subnetting
+- IPv4 addressing and subnetting
 
-\- VLAN segmentation
+- VLAN segmentation
 
-\- IEEE 802.1Q trunking
+- IEEE 802.1Q trunking
 
-\- Router-on-a-Stick
+- Router-on-a-Stick
 
-\- Inter-VLAN routing
+- Inter-VLAN routing
 
-\- Extended Access Control Lists (ACLs)
+- Extended Access Control Lists (ACLs)
 
-\- Centralized DHCP and DHCP Relay
+- Centralized DHCP and DHCP Relay
 
-\- DNS and HTTP services
+- DNS and HTTP services
 
-\- WLAN with WPA2-PSK and AES
+- WLAN with WPA2-PSK and AES
 
-\- Management VLAN and SSH configuration
+- Management VLAN and SSH configuration
 
-\- Spanning Tree Protocol (PVST)
+- Spanning Tree Protocol (PVST)
 
 
 
-\## My Contribution
+## My Contribution
 
 
 
@@ -70,21 +70,21 @@ My responsibilities included:
 
 
 
-\- Designing the simulated network topology
+- Designing the simulated network topology
 
-\- Creating the IPv4 addressing and VLAN structure
+- Creating the IPv4 addressing and VLAN structure
 
-\- Configuring Cisco IOS devices
+- Configuring Cisco IOS devices
 
-\- Implementing inter-VLAN routing
+- Implementing inter-VLAN routing
 
-\- Configuring ACL-based network segmentation
+- Configuring ACL-based network segmentation
 
-\- Setting up DHCP, DNS and HTTP services
+- Setting up DHCP, DNS and HTTP services
 
-\- Configuring wireless access points
+- Configuring wireless access points
 
-\- Testing and troubleshooting network connectivity
+- Testing and troubleshooting network connectivity
 
 
 
@@ -92,7 +92,7 @@ This repository focuses on my individual technical implementation rather than th
 
 
 
-\## Network Architecture
+## Network Architecture
 
 
 
@@ -108,7 +108,7 @@ Inter-VLAN routing is implemented through router subinterfaces using IEEE 802.1Q
 
 
 
-\## VLAN and IP Addressing
+## VLAN and IP Addressing
 
 
 
@@ -136,7 +136,7 @@ Trunk ports are configured with restricted allowed VLAN lists according to the r
 
 
 
-\## Network Security
+## Network Security
 
 
 
@@ -148,17 +148,17 @@ The configured rules include:
 
 
 
-\- DNS and HTTP access from IT and WLAN to the central server
+- DNS and HTTP access from IT and WLAN to the central server
 
-\- Isolation of the OT network from other routed networks
+- Isolation of the OT network from other routed networks
 
-\- Restricted WLAN access to network printers
+- Restricted WLAN access to network printers
 
-\- Restrictions on routed traffic originating from the video surveillance network
+- Restrictions on routed traffic originating from the video surveillance network
 
-\- Server access from the designated administration workstation
+- Server access from the designated administration workstation
 
-\- Implicit or explicit deny rules for traffic without matching permissions
+- Implicit or explicit deny rules for traffic without matching permissions
 
 
 
@@ -166,7 +166,7 @@ SSH version 2 and a dedicated management IP address are configured on the core s
 
 
 
-\## Network Services
+## Network Services
 
 
 
@@ -174,7 +174,7 @@ The central server SRV-01 uses the static IP address `10.10.30.10`.
 
 
 
-\### DHCP
+### DHCP
 
 
 
@@ -192,11 +192,11 @@ DHCP Relay is configured on the router for VLANs 10 and 50.
 
 
 
-!\[DHCP Configuration](screenshots/dhcp-pools.png)
+![DHCP Configuration](screenshots/dhcp-pools.png)
 
 
 
-\### DNS
+### DNS
 
 
 
@@ -210,11 +210,11 @@ DHCP Relay is configured on the router for VLANs 10 and 50.
 
 
 
-!\[DNS Configuration](screenshots/dns-records.png)
+![DNS Configuration](screenshots/dns-records.png)
 
 
 
-\### HTTP
+### HTTP
 
 
 
@@ -222,11 +222,11 @@ An internal company website is hosted on SRV-01 to demonstrate DNS resolution an
 
 
 
-!\[Intranet](screenshots/intranet-test.png)
+![Intranet](screenshots/intranet-test.png)
 
 
 
-\### WLAN
+### WLAN
 
 
 
@@ -234,7 +234,7 @@ The internal wireless network uses the SSID `Firma-Intern` with WPA2-PSK and AES
 
 
 
-\## Testing
+## Testing
 
 
 
@@ -254,23 +254,23 @@ Selected connectivity and network isolation tests are documented in the screensh
 
 
 
-\### OT Connectivity
+### OT Connectivity
 
 
 
-!\[OT Connectivity](screenshots/ot-connectivity.png)
+![OT Connectivity](screenshots/ot-connectivity.png)
 
 
 
-\### IT/OT Isolation
+### IT/OT Isolation
 
 
 
-!\[ACL Deny Test](screenshots/acl-deny.png)
+![ACL Deny Test](screenshots/acl-deny.png)
 
 
 
-\## Device Configurations
+## Device Configurations
 
 
 
@@ -278,35 +278,35 @@ The exported Cisco IOS configurations are available in the \[configs](configs/) 
 
 
 
-\- \[R-FW-01](configs/R-FW-01.txt)
+- [R-FW-01](configs/R-FW-01.txt)
 
-\- \[SW-CORE-01](configs/SW-CORE-01.txt)
+- [SW-CORE-01](configs/SW-CORE-01.txt)
 
-\- \[SW-VER-01](configs/SW-VER-01.txt)
+- [SW-VER-01](configs/SW-VER-01.txt)
 
-\- \[SW-OT-01](configs/SW-OT-01.txt)
+- [SW-OT-01](configs/SW-OT-01.txt)
 
-\- \[SW-OT-02](configs/SW-OT-02.txt)
+- [SW-OT-02](configs/SW-OT-02.txt)
 
-\- \[SW-LAG-01](configs/SW-LAG-01.txt)
-
-
-
-\## How to Open the Project
+- [SW-LAG-01](configs/SW-LAG-01.txt)
 
 
 
-1\. Install Cisco Packet Tracer.
-
-2\. Download the `it-ot-network-v1.0.pkt` file.
-
-3\. Open the file in Packet Tracer.
-
-4\. Inspect device configurations and perform connectivity tests.
+## How to Open the Project
 
 
 
-\## Simulation Limitations
+1. Install Cisco Packet Tracer.
+
+2. Download the `it-ot-network-v1.0.pkt` file.
+
+3. Open the file in Packet Tracer.
+
+4. Inspect device configurations and perform connectivity tests.
+
+
+
+## Simulation Limitations
 
 
 
@@ -314,21 +314,21 @@ This project is an educational network simulation, not a production deployment.
 
 
 
-\- End devices represent a larger manufacturing infrastructure.
+- End devices represent a larger manufacturing infrastructure.
 
-\- Network security is implemented using stateless router ACLs.
+- Network security is implemented using stateless router ACLs.
 
-\- Automated failover and firewall high availability are not implemented or verified.
+- Automated failover and firewall high availability are not implemented or verified.
 
-\- Physical transmission performance is not validated by the simulation.
+- Physical transmission performance is not validated by the simulation.
 
-\- Remote management is configured on the primary core switch, not on every access switch.
+- Remote management is configured on the primary core switch, not on every access switch.
 
-\- Any included credentials are intended exclusively for the isolated lab environment.
+- Any included credentials are intended exclusively for the isolated lab environment.
 
 
 
-\## Project Status
+## Project Status
 
 
 
