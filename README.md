@@ -113,21 +113,13 @@ Inter-VLAN routing is implemented through router subinterfaces using IEEE 802.1Q
 
 
 | VLAN | Purpose | Subnet | Gateway |
-
 |---|---|---|---|
-
 | 10 | IT / Administration | 10.10.10.0/24 | 10.10.10.1 |
-
 | 20 | OT / Production | 10.10.20.0/24 | 10.10.20.1 |
-
 | 30 | Servers | 10.10.30.0/24 | 10.10.30.1 |
-
 | 40 | Video Surveillance | 10.10.40.0/24 | 10.10.40.1 |
-
 | 50 | Internal WLAN | 10.10.50.0/24 | 10.10.50.1 |
-
 | 60 | Management | 10.10.60.0/24 | 10.10.60.1 |
-
 | 999 | Unused Native VLAN | — | — |
 
 
@@ -179,11 +171,8 @@ The central server SRV-01 uses the static IP address `10.10.30.10`.
 
 
 | Network | Address Range | Maximum Clients |
-
 |---|---|---|
-
 | IT | 10.10.10.50–10.10.10.199 | 150 |
-
 | WLAN | 10.10.50.50–10.10.50.199 | 150 |
 
 
@@ -201,11 +190,8 @@ DHCP Relay is configured on the router for VLANs 10 and 50.
 
 
 | Hostname | IP Address |
-
 |---|---|
-
 | intranet.firma.test | 10.10.30.10 |
-
 | server.firma.test | 10.10.30.10 |
 
 
@@ -243,13 +229,9 @@ Selected connectivity and network isolation tests are documented in the screensh
 
 
 | Test | Expected Result |
-
 |---|---|
-
 | IT workstation → Intranet | Allowed |
-
 | OT workstation → OT workstation | Allowed |
-
 | IT workstation → OT workstation (ICMP) | Denied |
 
 
